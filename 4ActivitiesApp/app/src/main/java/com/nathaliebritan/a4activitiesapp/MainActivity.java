@@ -28,11 +28,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnButton2Click(View v){
-
+        intent = new Intent (this, DrawerActivity.class);
+        startActivity(intent);
     }
 
     public void OnButton3Click(View v){
-
+        intent = new Intent (this, TabsActivity.class);
+        startActivity(intent);
     }
 
 }
