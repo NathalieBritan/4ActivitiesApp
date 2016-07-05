@@ -6,7 +6,7 @@
 
 
     <fragment
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:name="com.nathaliebritan.a4activitiesapp.HallowsListFragment"
         android:id="@+id/hallows_list_fragment"
@@ -14,7 +14,7 @@
         tools:layout="@layout/hallows_list_fragment" />
 
     <fragment
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:name="com.nathaliebritan.a4activitiesapp.HallowsImageFragment"
         android:id="@+id/hallows_image_fragment"
