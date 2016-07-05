@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:name="com.nathaliebritan.a4activitiesapp.HallowsListFragment"
+        android:id="@+id/hallows_list_fragment"
+        android:layout_weight="1"
+        tools:layout="@layout/hallows_list_fragment" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.nathaliebritan.a4activitiesapp.HallowsImageFragment"
+        android:id="@+id/hallows_image_fragment"
+        android:layout_weight="1"
+        tools:layout="@layout/hallows_image_fragment" />
+</LinearLayout>

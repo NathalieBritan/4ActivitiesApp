@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".TabsActivity" />
-        <activity android:name=".DrawerActivity"></activity>
+        <activity android:name=".DrawerActivity" />
+        <activity android:name=".HallowsImageActivity" />
+        <activity android:name=".HallowsScreenActivity"></activity>
     </application>
 
 </manifest>

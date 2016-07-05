@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnButton3Click(View v){
-        intent = new Intent (this, TabsActivity.class);
+        intent = new Intent (this, HallowsScreenActivity.class);
         startActivity(intent);
     }
 

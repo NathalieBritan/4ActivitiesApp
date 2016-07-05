@@ -24,10 +24,8 @@ public class DrawerActivity extends AppCompatActivity {
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         mContentFrame = (ImageView) findViewById(R.id.content_image);
 
-        // Set the adapter for the list view
         mDrawerList.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.drawer_list_item, mHouseTitles));
-        // Set the list's click listener
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
     }
 
@@ -38,14 +36,10 @@ public class DrawerActivity extends AppCompatActivity {
         }
     }
 
-    /** Swaps fragments in the main content view */
     private void selectItem(int position) {
         int[] images = {R.drawable.gryffindor,R.drawable.hufflepuff,R.drawable.slytherin, R.drawable.ravenclaw};
-        // Create a new fragment and specify the planet to show based on position
 
         mContentFrame.setBackgroundResource(images[position]);
-
-        // Highlight the selected item, update the title, and close the drawer
         mDrawerList.setItemChecked(position, true);
         setTitle(mHouseTitles[position]);
         mDrawerLayout.closeDrawer(mDrawerList);
