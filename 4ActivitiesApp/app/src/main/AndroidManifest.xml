@@ -15,11 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TabsActivity" />
         <activity android:name=".DrawerActivity" />
-        <activity android:name=".HallowsImageActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"/>
-        <activity android:name=".HallowsScreenActivity"></activity>
+        <activity
+            android:name=".HallowsImageActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".HallowsScreenActivity" />
+        <activity android:name=".TabsActivity"></activity>
     </application>
 
 </manifest>

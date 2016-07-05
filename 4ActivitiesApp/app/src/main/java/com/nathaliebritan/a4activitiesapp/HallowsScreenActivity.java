@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 
 public class HallowsScreenActivity extends FragmentActivity {
 
-    private int picture = 4;
+    private int picture = -1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +17,7 @@ public class HallowsScreenActivity extends FragmentActivity {
         Bundle extr = getIntent().getExtras();
         if(extr != null){
             picture = extr.getInt("selectedValue");
-            if(picture != 4 && fragment != null && fragment.isInLayout()){
+            if(picture != -1 && fragment != null && fragment.isInLayout()){
                 fragment.ShowPicture(picture);
             }
         }

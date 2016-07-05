@@ -29,7 +29,13 @@ public class StudentFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        pageNumber = getArguments() != null ? getArguments().getInt("num") : 1;
+        if(getArguments() != null){
+            pageNumber = getArguments().getInt("num");
+        }
+        else{
+            pageNumber = 1;
+        }
+
     }
 
     @Override
@@ -37,7 +43,7 @@ public class StudentFragment extends Fragment {
                              Bundle savedInstanceState) {
         View result = inflater.inflate(R.layout.fragment, container, false);
         ImageView image = (ImageView)result.findViewById(R.id.image);
-        image.setBackgroundResource(images[pageNumber]);
+        image.setBackgroundResource(images[pageNumber-1]);
         return result;
     }
 
